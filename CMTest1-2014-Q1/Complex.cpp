@@ -42,19 +42,19 @@ ostream &operator << (ostream &output, Complex c) //NON MEMBER FUNCTION
 {
 	if (c.re == 0 && c.im == 0)
 	{
-		output << 0 << endl;
+		output << 0;
 	}
 	else if (c.re == 0)
 	{
-		output << "j" << c.im << endl;
+		output << "j" << c.im;
 	}
 	else if (c.im == 0)
 	{
-		output << c.re << endl;
+		output << c.re;
 	}
 	else
 	{
-		output << c.re << "+" << "j" << c.im << endl;
+		output << c.re << "+" << "j" << c.im ;
 	}
 
 	return output;
